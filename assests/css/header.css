@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding: 5px;
+  box-shadow: 0 0 5px #333;
+  height: 10vh; }
+  .header .left {
+    flex: 3; }
+  .header .right span {
+    padding: 0 8px; }
+  .header .right .register {
+    color: rgba(0, 0, 0, 0.54); }
+  .header .right .sign-in {
+    color: #03a87c; }
+  .header .right .cta {
+    padding: 3px 12px;
+    border-radius: 4px;
+    border: 1px solid #03a87c;
+    color: #03a87c; }

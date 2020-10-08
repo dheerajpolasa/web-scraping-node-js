@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #main-container .loader-div .loader {
+    width: 45px;
+    height: 45px;
+    display: none;
+    padding: 0px;
+    border-radius: 100%;
+    border: 5px solid;
+    border-top-color: #f62459;
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+    border-left-color: #f62459;
+    border-right-color: rgba(255, 255, 255, 0.3);
+    -webkit-animation: loader 1s ease-in-out infinite;
+    animation: loader 1s ease-in-out infinite; }
+
+@keyframes loader {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes loader {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+  #main-container #form-container {
+    margin: 30px 20px 20px 20px;
+    width: 100%; }
+    #main-container #form-container input[type="text"] {
+      border: none;
+      border-bottom: 2px solid black;
+      outline: none;
+      width: 96%;
+      margin: 2%;
+      text-indent: 10px;
+      font-size: 25px; }
+  #main-container #results {
+    width: 100%; }
+    #main-container #results .post {
+      display: flex;
+      margin: 20px;
+      flex-direction: row;
+      justify-content: center;
+      box-shadow: 0 0 5px #333; }
+      #main-container #results .post .left-container {
+        width: 30%;
+        border: 0.5px solid #ccc; }
+        #main-container #results .post .left-container img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      #main-container #results .post .empty-state {
+        border: none; }
+      #main-container #results .post .right-container {
+        width: 70%;
+        margin: 20px;
+        display: flex;
+        flex-direction: column; }
+        #main-container #results .post .right-container h1 a {
+          text-decoration: none;
+          color: black; }
+        #main-container #results .post .right-container .user-details {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          margin-top: 20px; }
+  #main-container .post-button {
+    margin: 10px; }
+    #main-container .post-button button {
+      width: 100px; }

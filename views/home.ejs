@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/css/home.css">
+
+<div id="main-container">
+    <div id="form-container">
+        <!-- <form id="search-form" method="POST" action="/search"> -->
+        <input type="text" placeholder="Search Here" id="tag-input" />
+        <!-- <button type="submit" id="submit"> Search </button> -->
+        <!-- </form> -->
+    </div>
+    <div class="col-sm-6 text-center loader-div">
+        <div class="loader"></div>
+    </div>
+    <div id="results">
+        <div class="post">
+            <div class="left-container empty-state">
+                <img src="/images/empty-state.png" />
+            </div>
+            <!-- 
+            <div class="right-container">
+                <h1><a href="#">Test</a></h1>
+                <div class="user-details">
+                    <h4>Username</h4>
+                    <h5>Blog Name</h5>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div class="post-button">
+        <button type="button" id="next-posts" class="btn btn-outline-success" disabled>Next</button>
+    </div>
+</div>
+
+<script src="/js/common.js"></script>
